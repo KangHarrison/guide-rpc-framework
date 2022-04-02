@@ -117,11 +117,12 @@ public final class ExtensionLoader<T> {
             Enumeration<URL> urls;
             ClassLoader classLoader = ExtensionLoader.class.getClassLoader();
             urls = classLoader.getResources(fileName);
-            if (urls != null) {
-                while (urls.hasMoreElements()) {
-                    URL resourceUrl = urls.nextElement();
-                    loadResource(extensionClasses, classLoader, resourceUrl);
-                }
+            if (urls == null) {
+                return;
+            }
+            while (urls.hasMoreElements()) {
+                URL resourceUrl = urls.nextElement();
+                loadResource(extensionClasses, classLoader, resourceUrl);
             }
         } catch (IOException e) {
             log.error(e.getMessage());
