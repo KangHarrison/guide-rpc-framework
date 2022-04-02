@@ -2,14 +2,6 @@
 
 > [该 RPC 框架配套教程已经更新在我的星球，点击此链接了解详情。](https://javaguide.cn/zhuanlan/handwritten-rpc-framework.html)
 
-<div align="center">
-  <p> 中文| <a href="./README-EN.md">English</a>
-  </p>
-  <p>
-    <a href="https://github.com/Snailclimb/guide-rpc-framework">Github</a> | <a href="https://gitee.com/SnailClimb/guide-rpc-framework ">Gitee</a>
-  </p>
-</div>
-
 ## 前言
 
 虽说 RPC 的原理实际不难，但是，自己在实现的过程中自己也遇到了很多问题。[guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 目前只实现了 RPC 框架最基本的功能，一些可优化点都在下面提到了，有兴趣的小伙伴可以自行完善。
