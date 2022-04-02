@@ -85,8 +85,7 @@ public final class CuratorUtils {
     /**
      * Empty the registry of data
      */
-    public static void
-    clearRegistry(CuratorFramework zkClient, InetSocketAddress inetSocketAddress) {
+    public static void clearRegistry(CuratorFramework zkClient, InetSocketAddress inetSocketAddress) {
         REGISTERED_PATH_SET.stream().parallel().forEach(p -> {
             try {
                 if (p.endsWith(inetSocketAddress.toString())) {
